@@ -1,0 +1,39 @@
+#######################################
+# Syntax Coloring Map For ServoComposer
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+ServoComposer		KEYWORD1
+ServoComposer_event	KEYWORD1
+ServoComposer_servo	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+servoTickInit		KEYWORD2
+numServos		KEYWORD2
+servoTick		KEYWORD2
+moveRequest		KEYWORD2
+registerUserTickHandler	KEYWORD2
+timerStart		KEYWORD2
+moveToMid		KEYWORD2
+setGroup		KEYWORD2
+eventListen		KEYWORD2
+clearEvents		KEYWORD2
+servosStart		KEYWORD2
+servosPause		KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+SC_DBG_PRINT		LITERAL1
+SC_DBG_PRINTLN		LITERAL1
+SC_DBG_PRINT_PTR	LITERAL1
+SC_DBG_PRINTLN_PTR	LITERAL1
+
+SC_END			LITERAL1
+SC_GROUP		LITERAL1
+SC_GROUP_FILTER		LITERAL1
+SC_NUM_SERVOS		LITERAL1
