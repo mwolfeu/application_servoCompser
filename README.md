@@ -1,14 +1,17 @@
-<pre>
 # application_servoCompser
+<pre>
 
-ServoComposer provides the ability to:
-  create servo state events which trigger other servo movement or user defined callbacks
-  normalize midpoints/directions/movements/safe min-max among sets of servos.
-  have speed control
-  use external timers / time domains (for speed control)
-  group servos and control N groups with a single event
-  set up and change between several sets of triggers
-  rapid prototyping on linux 
+  This is a library I wrote for the Atmega328p microcontroller after building my first 
+quadroped robot.  Essentially, it is an event subsystem for servo motor control.
+
+Features:
+  Create servo state events which trigger other servo movement or user defined callbacks
+  Normalize midpoints/directions/movements/safe min-max among sets of servos.
+  Servo speed control
+  Use external timers / time domains (for speed control)
+  Group servos and control N groups with a single event
+  Set up and change between several sets of triggers
+  Rapid prototyping on Linux 
   
 Notes:
   All movements are relative to midpoint
@@ -17,6 +20,6 @@ Notes:
   Programattically generated actions are unlikely so event sets aren't modifiable/deletable
   Servos give no feedback, hence event triggering can't be exact.
   
-  Currently not interrupt safe, meaning:
-    no del while event checking.
+  Currently not interrupt safe, meaning: There is no object deletion while the event sub-
+ system is running.
 </pre>
